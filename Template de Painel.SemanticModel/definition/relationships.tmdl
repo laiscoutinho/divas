@@ -1,0 +1,5 @@
+relationship 76aa9200-b687-49bc-99d0-129a6bab6e32
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Ultima_Atualizacao.'Data Atualizada'
+	toColumn: LocalDateTable_bcf1b094-a7ce-4499-b0ca-ebfa8d78286c.Date
+

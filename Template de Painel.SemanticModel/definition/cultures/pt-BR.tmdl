@@ -1,0 +1,670 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "exemplo_cursos_IFCE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[Exemplo] Cursos IFCE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "[exemplo] cursos IFCE": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "[exemplo] curso IFCE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE.cod_curso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[Exemplo] Cursos IFCE",
+			          "ConceptualProperty": "COD_CURSO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod curso": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_CURSO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE.modalidade_ensino": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[Exemplo] Cursos IFCE",
+			          "ConceptualProperty": "MODALIDADE_ENSINO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "modalidade ensino": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MODALIDADE_ENSINO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Modalidade": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE.nivel_ensino": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[Exemplo] Cursos IFCE",
+			          "ConceptualProperty": "NIVEL_ENSINO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel ensino": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NIVEL_ENSINO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Nível de Ensino": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE.desc_curso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[Exemplo] Cursos IFCE",
+			          "ConceptualProperty": "DESC_CURSO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desc curso": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DESC_CURSO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "description curso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "Curso": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE.modalidade_curso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[Exemplo] Cursos IFCE",
+			          "ConceptualProperty": "MODALIDADE_CURSO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "modalidade curso": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MODALIDADE_CURSO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE.sit_curso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[Exemplo] Cursos IFCE",
+			          "ConceptualProperty": "SIT_CURSO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sit curso": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SIT_CURSO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Situação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE.desc_instituicao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[Exemplo] Cursos IFCE",
+			          "ConceptualProperty": "DESC_INSTITUICAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desc instituicao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DESC_INSTITUICAO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "description instituicao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "Instituição": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE.cursos_presenciais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[Exemplo] Cursos IFCE",
+			          "ConceptualProperty": "Cursos Presenciais"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cursos presenciais": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE.cursos_semipresenciais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[Exemplo] Cursos IFCE",
+			          "ConceptualProperty": "Cursos Semipresenciais"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cursos semipresenciais": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE.cursos_à_distancia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[Exemplo] Cursos IFCE",
+			          "ConceptualProperty": "Cursos à Distancia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cursos à distancia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ifce_internacional.campus": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IFCE INTERNACIONAL",
+			          "ConceptualProperty": "CAMPUS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Campus": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "exemplo_cursos_IFCE_has_cursos_à_distancia": {
+			      "Binding": {
+			        "ConceptualEntity": "[Exemplo] Cursos IFCE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exemplo_cursos_IFCE": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE"
+			          }
+			        },
+			        "exemplo_cursos_IFCE.cursos_à_distancia": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE.cursos_à_distancia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exemplo_cursos_IFCE"
+			            },
+			            "Object": {
+			              "Role": "exemplo_cursos_IFCE.cursos_à_distancia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exemplo_cursos_IFCEs_have_cursos_à_distancia"
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE_has_cursos_semipresenciais": {
+			      "Binding": {
+			        "ConceptualEntity": "[Exemplo] Cursos IFCE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exemplo_cursos_IFCE": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE"
+			          }
+			        },
+			        "exemplo_cursos_IFCE.cursos_semipresenciais": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE.cursos_semipresenciais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exemplo_cursos_IFCE"
+			            },
+			            "Object": {
+			              "Role": "exemplo_cursos_IFCE.cursos_semipresenciais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exemplo_cursos_IFCEs_have_cursos_semipresenciais"
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE_has_cursos_presenciais": {
+			      "Binding": {
+			        "ConceptualEntity": "[Exemplo] Cursos IFCE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exemplo_cursos_IFCE": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE"
+			          }
+			        },
+			        "exemplo_cursos_IFCE.cursos_presenciais": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE.cursos_presenciais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exemplo_cursos_IFCE"
+			            },
+			            "Object": {
+			              "Role": "exemplo_cursos_IFCE.cursos_presenciais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exemplo_cursos_IFCEs_have_cursos_presenciais"
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE_has_desc_instituicao": {
+			      "Binding": {
+			        "ConceptualEntity": "[Exemplo] Cursos IFCE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exemplo_cursos_IFCE": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE"
+			          }
+			        },
+			        "exemplo_cursos_IFCE.desc_instituicao": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE.desc_instituicao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exemplo_cursos_IFCE"
+			            },
+			            "Object": {
+			              "Role": "exemplo_cursos_IFCE.desc_instituicao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exemplo_cursos_IFCEs_have_desc_instituicaos"
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE_has_sit_curso": {
+			      "Binding": {
+			        "ConceptualEntity": "[Exemplo] Cursos IFCE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exemplo_cursos_IFCE": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE"
+			          }
+			        },
+			        "exemplo_cursos_IFCE.sit_curso": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE.sit_curso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exemplo_cursos_IFCE"
+			            },
+			            "Object": {
+			              "Role": "exemplo_cursos_IFCE.sit_curso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exemplo_cursos_IFCEs_have_sit_cursos"
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE_has_modalidade_curso": {
+			      "Binding": {
+			        "ConceptualEntity": "[Exemplo] Cursos IFCE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exemplo_cursos_IFCE": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE"
+			          }
+			        },
+			        "exemplo_cursos_IFCE.modalidade_curso": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE.modalidade_curso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exemplo_cursos_IFCE"
+			            },
+			            "Object": {
+			              "Role": "exemplo_cursos_IFCE.modalidade_curso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exemplo_cursos_IFCEs_have_modalidade_cursos"
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE_has_desc_curso": {
+			      "Binding": {
+			        "ConceptualEntity": "[Exemplo] Cursos IFCE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exemplo_cursos_IFCE": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE"
+			          }
+			        },
+			        "exemplo_cursos_IFCE.desc_curso": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE.desc_curso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exemplo_cursos_IFCE"
+			            },
+			            "Object": {
+			              "Role": "exemplo_cursos_IFCE.desc_curso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exemplo_cursos_IFCEs_have_desc_cursos"
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE_has_nivel_ensino": {
+			      "Binding": {
+			        "ConceptualEntity": "[Exemplo] Cursos IFCE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exemplo_cursos_IFCE": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE"
+			          }
+			        },
+			        "exemplo_cursos_IFCE.nivel_ensino": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE.nivel_ensino"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exemplo_cursos_IFCE"
+			            },
+			            "Object": {
+			              "Role": "exemplo_cursos_IFCE.nivel_ensino"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exemplo_cursos_IFCEs_have_nivel_ensinos"
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE_has_modalidade_ensino": {
+			      "Binding": {
+			        "ConceptualEntity": "[Exemplo] Cursos IFCE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exemplo_cursos_IFCE": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE"
+			          }
+			        },
+			        "exemplo_cursos_IFCE.modalidade_ensino": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE.modalidade_ensino"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exemplo_cursos_IFCE"
+			            },
+			            "Object": {
+			              "Role": "exemplo_cursos_IFCE.modalidade_ensino"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exemplo_cursos_IFCEs_have_modalidade_ensinos"
+			        }
+			      ]
+			    },
+			    "exemplo_cursos_IFCE_has_cod_curso": {
+			      "Binding": {
+			        "ConceptualEntity": "[Exemplo] Cursos IFCE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exemplo_cursos_IFCE": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE"
+			          }
+			        },
+			        "exemplo_cursos_IFCE.cod_curso": {
+			          "Target": {
+			            "Entity": "exemplo_cursos_IFCE.cod_curso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exemplo_cursos_IFCE"
+			            },
+			            "Object": {
+			              "Role": "exemplo_cursos_IFCE.cod_curso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exemplo_cursos_IFCEs_have_cod_cursos"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

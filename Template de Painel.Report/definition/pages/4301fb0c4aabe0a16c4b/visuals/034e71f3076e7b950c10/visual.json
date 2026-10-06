@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "034e71f3076e7b950c10",
+  "position": {
+    "x": 92.5,
+    "y": 71.25,
+    "z": 11000,
+    "height": 222.5,
+    "width": 543.75,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Bem-vindo ao"
+                  },
+                  {
+                    "value": " Painel Modelo do IFCE",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": "! Este painel foi desenvolvido como referência para a construção de novos painéis institucionais, adotando os padrões visuais e de usabilidade definidos pelo Instituto Federal do Ceará."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "As informações apresentadas utilizam dados públicos dos cursos do IFCE, disponibilizados por meio do Portal de Dados Abertos. O objetivo é demonstrar a aplicação dos padrões de visualização de dados da instituição, fornecendo uma base consistente para o desenvolvimento de futuras soluções de acompanhamento e análise."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#185F28'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

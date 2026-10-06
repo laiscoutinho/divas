@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "76b0083efa7edff21f0c",
+  "position": {
+    "x": 2.7801786249666982,
+    "y": 127.40874744015163,
+    "z": 2000,
+    "height": 63.587294005254357,
+    "width": 64.810126582278485,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "image",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "users-line-solid-full-_1_7264926170734182.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "209c2bbb86f3800c0da3",
+  "howCreated": "InsertVisualButton"
+}

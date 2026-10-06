@@ -1,0 +1,31 @@
+{
+  "name": "Custom",
+  "textClasses": {
+    "label": {
+      "fontFace": "Open Sans",
+      "fontSize": 12
+    },
+    "callout": {
+      "fontFace": "Open Sans",
+      "fontSize": 24
+    },
+    "title": {
+      "fontFace": "Open Sans",
+      "fontSize": 36
+    },
+    "header": {
+      "fontFace": "Open Sans",
+      "fontSize": 24
+    }
+  },
+  "dataColors": [
+    "#217E35",
+    "#E6B800",
+    "#4A9AC9",
+    "#2F9E41",
+    "#C0392B",
+    "#6ED27B",
+    "#E68F00",
+    "#C0392B"
+  ]
+}

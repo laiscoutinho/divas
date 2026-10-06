@@ -1,0 +1,198 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU10",
+      "reportVersionAtImport": {
+        "visual": "1.8.101",
+        "report": "2.0.101",
+        "page": "1.3.101"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Custom06987764214637926.json",
+      "reportVersionAtImport": {
+        "visual": "1.8.101",
+        "report": "2.0.101",
+        "page": "1.3.101"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY24SU10",
+          "path": "BaseThemes/CY24SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "button9418972574719442.svg",
+          "path": "button9418972574719442.svg",
+          "type": "Image"
+        },
+        {
+          "name": "Custom06987764214637926.json",
+          "path": "Custom06987764214637926.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "eraser-solid_29498782178294949.png",
+          "path": "eraser-solid_29498782178294949.png",
+          "type": "Image"
+        },
+        {
+          "name": "filter-solid_13709100332323034.svg",
+          "path": "filter-solid_13709100332323034.svg",
+          "type": "Image"
+        },
+        {
+          "name": "globe-americas-solid_1_(1)883236057713918.svg",
+          "path": "globe-americas-solid_1_(1)883236057713918.svg",
+          "type": "Image"
+        },
+        {
+          "name": "globe-solid-full-_1_3189998988262879.png",
+          "path": "globe-solid-full-_1_3189998988262879.png",
+          "type": "Image"
+        },
+        {
+          "name": "globe-solid-full-_1_9329292103188354.png",
+          "path": "globe-solid-full-_1_9329292103188354.png",
+          "type": "Image"
+        },
+        {
+          "name": "globe-solid-full18676673628245377.png",
+          "path": "globe-solid-full18676673628245377.png",
+          "type": "Image"
+        },
+        {
+          "name": "globe-solid-full610444867451737.png",
+          "path": "globe-solid-full610444867451737.png",
+          "type": "Image"
+        },
+        {
+          "name": "globe-solid-full9365142635504875.png",
+          "path": "globe-solid-full9365142635504875.png",
+          "type": "Image"
+        },
+        {
+          "name": "home-solid_123696828805406922.svg",
+          "path": "home-solid_123696828805406922.svg",
+          "type": "Image"
+        },
+        {
+          "name": "home-solid_1641877966369771.svg",
+          "path": "home-solid_1641877966369771.svg",
+          "type": "Image"
+        },
+        {
+          "name": "image_13086310776927794.png",
+          "path": "image_13086310776927794.png",
+          "type": "Image"
+        },
+        {
+          "name": "image1911766529416521.png",
+          "path": "image1911766529416521.png",
+          "type": "Image"
+        },
+        {
+          "name": "map-solid-full-_3_688814640214953.png",
+          "path": "map-solid-full-_3_688814640214953.png",
+          "type": "Image"
+        },
+        {
+          "name": "map-solid-full-_4_8130624085574129.png",
+          "path": "map-solid-full-_4_8130624085574129.png",
+          "type": "Image"
+        },
+        {
+          "name": "map-solid-full35133214774933885.png",
+          "path": "map-solid-full35133214774933885.png",
+          "type": "Image"
+        },
+        {
+          "name": "table-solid-full-_1_5818233120833766.png",
+          "path": "table-solid-full-_1_5818233120833766.png",
+          "type": "Image"
+        },
+        {
+          "name": "table-solid-full6760018809699083.png",
+          "path": "table-solid-full6760018809699083.png",
+          "type": "Image"
+        },
+        {
+          "name": "Tela_Inicial_(6)8130339786333305.png",
+          "path": "Tela_Inicial_(6)8130339786333305.png",
+          "type": "Image"
+        },
+        {
+          "name": "users-line-solid-full-_1_7264926170734182.png",
+          "path": "users-line-solid-full-_1_7264926170734182.png",
+          "type": "Image"
+        },
+        {
+          "name": "users-line-solid-full-_3_4569197871073575.png",
+          "path": "users-line-solid-full-_3_4569197871073575.png",
+          "type": "Image"
+        },
+        {
+          "name": "users-line-solid-full-_3_5246888401476915.png",
+          "path": "users-line-solid-full-_3_5246888401476915.png",
+          "type": "Image"
+        },
+        {
+          "name": "users-line-solid-full-_3_8907711368143306.png",
+          "path": "users-line-solid-full-_3_8907711368143306.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

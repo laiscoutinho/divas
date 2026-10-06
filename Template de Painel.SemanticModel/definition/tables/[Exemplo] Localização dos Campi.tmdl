@@ -1,0 +1,31 @@
+table '[Exemplo] Localização dos Campi'
+	lineageTag: 04f8a1cd-a977-481a-909c-3688484e0c43
+
+	column Campus
+		dataType: string
+		lineageTag: 5edfd49b-1467-49aa-89c0-7e1a2dfa937f
+		summarizeBy: none
+		sourceColumn: Campus
+
+		annotation SummarizationSetBy = Automatic
+
+	column Localização
+		dataType: string
+		lineageTag: f4ab7a10-1e98-4bcf-b9ef-64e1fadd7b2a
+		summarizeBy: none
+		sourceColumn: Localização
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '[Exemplo] Localização dos Campi' = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("fVRBjsIwDPxK1TP7iGmaZY2apmsStALxmD2t+ALf6cdwkrYgB+2JcWYcbI/Ty6U1cFM8Np+eAwZ7RrtrN/xhbHvdbRoHhsGI+S6iZ6BUh4izJfZN75tRbrIirs5UjrE9e9HlX8V9R/pBP/8KvUKlOPqOMQhfgGIHcl7XU53pejDS2M+3VNIClYL2ESEKX4BiZTJcxrQgxQfCuI+5pxXqChjBzvdjqmCB+g4sF6DOzt4ESv9fkOI7KZkp5AY3rH2EdMbUZf9W/KZKv5SofXOe0UPGe0o79RJVfXRx0AbVh5VD0YCQDcpI8bHDQXoXfkFVvvOGXM7PSOc74kwXsLJsKXim/15JmhQkSWxNstfw7YSjPKJtxCnQmxYw0eRNEm1YaSZr5luqtgDttkdzIuxtUjwDfUdalchpp1eoFF/S+dmP2aANv/lGyD5jsss3ogTV+/ATFXtWWG2P6zD/ldUpMCuuDw==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t, #"Coluna 2" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}, {"Coluna 2", type text}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado",{{"Coluna 1", "Campus"}, {"Coluna 2", "Localização"}})
+				in
+				    #"Colunas Renomeadas"
+
+	annotation PBI_ResultType = Table
+

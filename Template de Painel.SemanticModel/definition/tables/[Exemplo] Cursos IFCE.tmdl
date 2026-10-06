@@ -1,0 +1,109 @@
+table '[Exemplo] Cursos IFCE'
+	lineageTag: 6f1dac31-7b01-4c05-8142-5b1902ef2f6d
+
+	measure 'Cursos Presenciais' = ```
+			
+			    CALCULATE(COUNTROWS('[Exemplo] Cursos IFCE'), FILTER('[Exemplo] Cursos IFCE', '[Exemplo] Cursos IFCE'[MODALIDADE_ENSINO] == "Presencial"))
+			```
+		formatString: 0
+		lineageTag: 897c6397-14f8-4c46-96c4-e7ef473b5cd9
+
+	measure 'Cursos Semipresenciais' = ```
+			
+			    CALCULATE(COUNTROWS('[Exemplo] Cursos IFCE'), FILTER('[Exemplo] Cursos IFCE', '[Exemplo] Cursos IFCE'[MODALIDADE_ENSINO] == "Semipresencial"))
+			```
+		formatString: 0
+		lineageTag: 8341d1ae-1fea-4937-8c4a-ba205918e38c
+
+	measure 'Cursos à Distancia' = ```
+			
+			    CALCULATE(COUNTROWS('[Exemplo] Cursos IFCE'), FILTER('[Exemplo] Cursos IFCE', '[Exemplo] Cursos IFCE'[MODALIDADE_ENSINO] == "A Distância"))
+			```
+		formatString: 0
+		lineageTag: 19888488-1a5f-4647-add1-2d52e5c238f9
+
+	measure 'Período de Leitura dos Dados' = "2009 a 2024"
+		lineageTag: 9e6b94cf-400d-4ad6-a001-940c1ddb7e73
+
+	column COD_CURSO
+		dataType: int64
+		formatString: 0
+		lineageTag: 344f3294-32ed-4be0-b3fa-45293188b2a2
+		summarizeBy: sum
+		sourceColumn: COD_CURSO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MODALIDADE_ENSINO
+		dataType: string
+		lineageTag: 64d36dbe-eb54-4f89-855e-888bd07e09dd
+		summarizeBy: none
+		sourceColumn: MODALIDADE_ENSINO
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL_ENSINO
+		dataType: string
+		lineageTag: 40fca582-55d7-4b96-971d-9c9a23262b26
+		summarizeBy: none
+		sourceColumn: NIVEL_ENSINO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESC_CURSO
+		dataType: string
+		lineageTag: 84bc2eb5-753b-4af0-95d3-54b02cc9059a
+		summarizeBy: none
+		sourceColumn: DESC_CURSO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MODALIDADE_CURSO
+		dataType: string
+		lineageTag: 994693c2-f471-4292-aea6-45ee2c55bfd0
+		summarizeBy: none
+		sourceColumn: MODALIDADE_CURSO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SIT_CURSO
+		dataType: string
+		lineageTag: c212825b-f8b2-412d-8719-26f04a77292e
+		summarizeBy: none
+		sourceColumn: SIT_CURSO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESC_INSTITUICAO
+		dataType: string
+		lineageTag: 26987c4e-9b67-4d4c-be90-6ce47507a1fa
+		summarizeBy: none
+		sourceColumn: DESC_INSTITUICAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Localização do Campus'
+		dataType: string
+		lineageTag: ef445c63-54c2-4224-9c03-462e59b399fe
+		summarizeBy: none
+		sourceColumn: Localização do Campus
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '[Exemplo] Cursos IFCE' = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\thaly\Downloads\ifce-cursos.csv"),[Delimiter="	", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"COD_CURSO", Int64.Type}, {"MODALIDADE_ENSINO", type text}, {"NIVEL_ENSINO", type text}, {"DESC_CURSO", type text}, {"MODALIDADE_CURSO", type text}, {"SIT_CURSO", type text}, {"DESC_INSTITUICAO", type text}}),
+				    #"Consultas Mescladas" = Table.NestedJoin(#"Tipo Alterado", {"DESC_INSTITUICAO"}, #"[Exemplo] Localização dos Campi", {"Coluna 1"}, "[Exemplo] Localização dos Campi", JoinKind.LeftOuter),
+				    #"[Exemplo] Localização dos Campi Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "[Exemplo] Localização dos Campi", {"Coluna 2"}, {"[Exemplo] Localização dos Campi.Coluna 2"}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"[Exemplo] Localização dos Campi Expandido",{{"[Exemplo] Localização dos Campi.Coluna 2", "Localização do Campus"}})
+				in
+				    #"Colunas Renomeadas"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

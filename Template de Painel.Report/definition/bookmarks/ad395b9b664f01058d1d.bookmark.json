@@ -1,0 +1,592 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Filtro Off Exemplo 2",
+  "name": "ad395b9b664f01058d1d",
+  "options": {
+    "targetVisualNames": [
+      "df2b1c3e753990dde6ed"
+    ],
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "e7972eeb10434d6b628b",
+    "sections": {
+      "e7972eeb10434d6b628b": {
+        "filters": {
+          "byExpr": [
+            {
+              "name": "45c33037e0152215a770",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "i",
+                    "Entity": "IFCE INTERNACIONAL",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "i"
+                                }
+                              },
+                              "Property": "TIPO INTERCÂMBIO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'RECEPTIVO'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IFCE INTERNACIONAL"
+                    }
+                  },
+                  "Property": "TIPO INTERCÂMBIO"
+                }
+              },
+              "howCreated": 1
+            }
+          ]
+        },
+        "visualContainers": {
+          "a68a9cbec5292a9f652f": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "3ee3afe5d5ff8e34daf3": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "e5a8bd1822497ad66ee8": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "704da8530bc632c823b6": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "76b0083efa7edff21f0c": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "5ff743ba8e52d52a3987": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "587937b9ba3b913dd04c": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "80e4194a6c606f7d2b85": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "10dea29faf14ec12c15c": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IFCE INTERNACIONAL"
+                        }
+                      },
+                      "Property": "CAMPUS"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a894bb06341db2c90ddc": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "IFCE INTERNACIONAL"
+                        }
+                      },
+                      "Property": "TIPO INTERCÂMBIO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "e048010a550ae8f7f3b3": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "debf648051281536107b": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "5ebcadeb4eded4918f20": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "1492f04d2ae960c22d36",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "SIT_CURSO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "SIT_CURSO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "8d4da232bb76bc7109bf": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "e9357c496cc615d5ee07": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "4faa436613d7ad349d79": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f5b2785b6e8d3b8985d6",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "DESC_CURSO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b8719e623dcc0b78d47e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "DESC_INSTITUICAO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "3f6f28ec32371b3d860d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "SIT_CURSO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "21741161e2680ed2f31c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "MODALIDADE_ENSINO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b177ef160bfd19aa1707",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "NIVEL_ENSINO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "DESC_INSTITUICAO"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "d9586824cc5675d89b48": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8293988d934fe804a9af",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "DESC_INSTITUICAO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "DESC_INSTITUICAO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "95a7d5724bec06079023": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3c696ae50d15b8c9e802",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "MODALIDADE_CURSO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "MODALIDADE_CURSO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "df2b1c3e753990dde6ed": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "3e273812adb43071f14a": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "f0e4610c6f093518e282": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "eb3156449b8f72fba25b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "SIT_CURSO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "[Exemplo] Cursos IFCE"
+                        }
+                      },
+                      "Property": "SIT_CURSO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "bad531bf43c90b9b97ca": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "51cbf780d0f0a0170845": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "728ae88188f5cc61fc66": {
+            "isHidden": true
+          },
+          "282da9abf9ce38a3892f": {
+            "isHidden": true
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

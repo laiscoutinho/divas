@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Template de Painel"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "34967be3-019b-42c3-a5f8-168c6be143cc"
+  }
+}

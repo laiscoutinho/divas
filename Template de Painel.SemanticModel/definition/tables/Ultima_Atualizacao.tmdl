@@ -1,0 +1,55 @@
+table Ultima_Atualizacao
+	lineageTag: 0b62ece1-f915-4e2d-9806-932b5ef89ca6
+
+	measure 'Ultima Atualizacao' = ```
+			
+			"Última atualização em " & 
+			FORMAT(
+			    MAX('Ultima_Atualizacao'[Data Atualizada]),
+			    "dd/MM/yyyy"
+			)
+			```
+		lineageTag: 313e0618-fa45-49dc-bb1a-21dacec186c5
+
+	measure ObsData =
+			
+			"[Título do Painel] | " &
+			FORMAT(
+			    MAX('Ultima_Atualizacao'[Data Atualizada]),
+			    "dd/MM/yyyy"
+			)
+		lineageTag: 3369bf3c-97ea-4669-a594-d8bc7167c725
+
+	column 'Data Atualizada'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 65fbe5c2-cad6-470f-b99a-ffe2ec677c64
+		summarizeBy: none
+		sourceColumn: Data Atualizada
+
+		variation Variation
+			isDefault
+			relationship: 76aa9200-b687-49bc-99d0-129a6bab6e32
+			defaultHierarchy: LocalDateTable_bcf1b094-a7ce-4499-b0ca-ebfa8d78286c.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Ultima_Atualizacao = m
+		mode: import
+		source =
+				let
+				  Origem = DateTime.LocalNow(),
+				    #"Convertido para Tabela" = #table(1, {{Origem}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Convertido para Tabela",{{"Column1", "Data Atualizada"}}),
+				    Personalizar1 = Table.TransformColumns(#"Colunas Renomeadas",{{"Data Atualizada", DateTime.Date, type date}})
+				in
+				  Personalizar1
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

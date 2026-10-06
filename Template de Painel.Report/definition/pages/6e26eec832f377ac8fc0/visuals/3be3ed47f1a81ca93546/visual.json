@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "3be3ed47f1a81ca93546",
+  "position": {
+    "x": 9.72644376899696,
+    "y": 6.8085106382978724,
+    "z": 6000,
+    "height": 705.16717325227967,
+    "width": 390.30395136778117,
+    "tabOrder": 6000
+  },
+  "visualGroup": {
+    "displayName": "Menu Lateral Esquerdo",
+    "groupMode": "ScaleMode"
+  }
+}
